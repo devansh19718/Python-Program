@@ -1,0 +1,26 @@
+<xml xmlns="https://developers.google.com/blockly/xml">
+  <block type="start_wiz_program" id="Yn9#~r{k~#VPb(O0c,{2" deletable="false" movable="false" x="10" y="10">
+    <next>
+      <block type="wizgear_sensor_config" id="Eig$s4`GTYxA!!D4_D4|">
+        <field name="SENSOR">weather</field>
+        <field name="MODE">start</field>
+        <next>
+          <block type="wiz_notification" id="K$R0nna7leUYa*E.mWMH">
+            <field name="CATEGORY">success</field>
+            <field name="AUTO_CLOSE">true</field>
+            <value name="HEADER">
+              <block type="wizgear_sensor_read" id="iZp2!FZR=sJ85/%(Hf)l">
+                <field name="SENSOR">weather</field>
+              </block>
+            </value>
+            <value name="MSG">
+              <block type="text" id="J|%Lew}dewdYI^%CmIMD">
+                <field name="TEXT">weather</field>
+              </block>
+            </value>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+</xml>
